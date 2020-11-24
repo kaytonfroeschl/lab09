@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="formChecker.js"></script>
+
+</head>
+<body>
+
+    <h1>Kayton's Store</h1>
+
+    <form name="myForm" action="/~k181f968/customerBackend.php" onsubmit="return validateForm()" method="post">
+        <label class="label1">Username:</label>
+        <br>
+        <input name="username" id="username" type="text" />
+        <br>
+        <br>
+        <label class="label1">Password:</label>
+        <br>
+        <input type="text" name="password" id="password" />
+        <br>
+        <br>
+
+
+        <label for="goldendoodle">Items available:</label><br><br />
+
+        <input type="checkbox" id="goldendoodle" name="item" value="2000">
+        <label for="goldendoodle">Goldendoodle : $2,000</label><br>
+
+        <input type="checkbox" id="husky" name="item" value="3000">
+        <label for="husky">Husky : $3,000</label><br>
+
+        <input type="checkbox" id="pointer" name="item" value="5000">
+        <label for="pointer">Pointer : $5,000</label><br>
+
+        <br />
+        <br />
+
+        <label for="1">Select a shipping option:</label><br>
+        <input type="radio" id="1" name="shipping" value="free">
+        <label for="1">Free 7 day</label><br>
+
+        <input type="radio" id="2" name="shipping" value="overnight">
+        <label for="2">$50.00 over night</label><br>
+
+        <input type="radio" id="3" name="shipping" value="threeday">
+        <label for="3">$5.00 three day</label><br><br />
+
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+</body>
+</html>
